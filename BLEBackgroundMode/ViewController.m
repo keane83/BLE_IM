@@ -217,8 +217,6 @@
     // Log it
     DLog(@"Received: %@", stringFromData);
 }
-
-//test
 - (void)toScan
 {
     [self.centralManger scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]
