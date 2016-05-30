@@ -10,7 +10,7 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #define TRANSFER_SERVICE_UUID           @"E20A39F4-73F5-4BC4-A12F-17D1AD830527"
 #define TRANSFER_CHARACTERISTIC_UUID    @"08590F7E-DB05-467E-8757-72F6FA830527"
-
+//test liujian
 @interface ViewController () <CBCentralManagerDelegate, CBPeripheralDelegate>
 
 @property (strong, nonatomic) CBCentralManager *centralManger;
@@ -29,6 +29,8 @@
     
     self.centralManger = [[CBCentralManager alloc] initWithDelegate:self
                                                               queue:nil];
+    
+    UIButton *btn;
 }
 
 - (void)didReceiveMemoryWarning
